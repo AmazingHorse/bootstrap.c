@@ -1,7 +1,7 @@
 {
-    "full_name": "Vincent Bernat",
-    "email": "bernat@luffy.cx",
-    "repo_name": "bootstrap",
+    "full_name": "Bill Heughan",
+    "email": "billheughan@gmail.com",
+    "repo_name": "sublime_bootstrap",
     "project_name": "bootstrap",
-    "project_description": "boilerplate for small C programs with autotools"
+    "project_description": "boilerplate for small C programs with autotools, with sublime text project"
 }
