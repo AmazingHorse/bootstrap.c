@@ -75,6 +75,8 @@ main(int argc, char *argv[])
 	/* TODO:3000 It's time for you program to do something. Add anything
 	 * TODO:3000 you want here. */
 	log_info("main", "hello world!");
+	log_info("main", "The square of %d is %d!", 2, square(2));
+	log_info("main", "The factorial of %d is %d!", 2, factorial(2));
 	log_warnx("main", "your program does nothing");
 
 	return EXIT_SUCCESS;

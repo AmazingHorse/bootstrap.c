@@ -1,4 +1,4 @@
-#include "autotools-unittest/sample.h"
+#include "sample.h"
 
 int square(int n) {
   return n * n;

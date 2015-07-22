@@ -23,6 +23,7 @@
 #endif
 
 #include "log.h"
+#include "sample.h"
 
 #include <stdlib.h>
 

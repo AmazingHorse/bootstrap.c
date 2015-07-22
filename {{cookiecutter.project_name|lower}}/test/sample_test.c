@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "autotools-unittest/sample.h"
+#include "sample.h"
 
 TEST(square, seven) {
   EXPECT_EQ(49, square(7));
