@@ -1,7 +1,3 @@
-AM_CFLAGS = $(MORE_CFLAGS)
-AM_CPPFLAGS = $(MORE_CPPFLAGS)
-AM_LDFLAGS = $(MORE_LDFLAGS)
-
 bin_PROGRAMS = {{cookiecutter.project_name|lower}}
 dist_man_MANS = {{cookiecutter.project_name|lower}}.8
 
@@ -9,7 +5,7 @@ dist_man_MANS = {{cookiecutter.project_name|lower}}.8
 ## TODO:5000 Automake will find dependencies by itself. Run
 ## TODO:5000 ./autogen.sh after modifying this file.
 
-{{cookiecutter.project_name|lower|replace("-","_")}}_SOURCES  = log.c log.h {{cookiecutter.project_name|lower}}.h {{cookiecutter.project_name|lower}}.c
+{{cookiecutter.project_name|lower|replace("-","_")}}_SOURCES  = log.c log.h sample.h sample.c {{cookiecutter.project_name|lower}}.h {{cookiecutter.project_name|lower}}.c
 {{cookiecutter.project_name|lower|replace("-","_")}}_CFLAGS   = $(AM_CFLAGS) @JANSSON_CFLAGS@
 {{cookiecutter.project_name|lower|replace("-","_")}}_LDFLAGS  = $(AM_LDFLAGS) @JANSSON_LIBS@
 

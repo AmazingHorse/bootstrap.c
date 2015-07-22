@@ -24,10 +24,30 @@ LT_INIT
 AC_PROG_CC
 AC_PROG_CC_C99
 AC_PROG_CXX
+ACX_PTHREAD([have_pthread=yes], [have_pthread=no])
 AM_PROG_CC_C_O
 AC_PROG_LIBTOOL
 AC_PROG_LN_S
 AC_PROG_EGREP
+
+# Define variables for unit test using gtest
+GTEST_VERSION="1.6.0"
+if test "x$have_pthread" = "xyes"; then
+  GTEST_CPPFLAGS="-DGTEST_HAS_PTHREAD=1 -I\$(top_srcdir)/lib/gmock"
+  GTEST_CXXFLAGS="$PTHREAD_CFLAGS"
+  GTEST_LDFLAGS="-L\$(top_builddir)/lib/gmock"
+  GTEST_LIBS="$PTHREAD_LIBS"
+else
+  GTEST_CPPFLAGS="-DGTEST_HAS_PTHREAD=0 -I\$(top_srcdir)/lib/gmock"
+  GTEST_CXXFLAGS=
+  GTEST_LDFLAGS="-L\$(top_builddir)/lib/gmock"
+  GTEST_LIBS=
+fi
+AC_SUBST([GTEST_VERSION])
+AC_SUBST([GTEST_CPPFLAGS])
+AC_SUBST([GTEST_CXXFLAGS])
+AC_SUBST([GTEST_LDFLAGS])
+AC_SUBST([GTEST_LIBS])
 
 # Check some compiler flags
 AX_CFLAGS_GCC_OPTION([-fdiagnostics-show-option],[MORE_CFLAGS])
@@ -66,7 +86,7 @@ AC_CACHE_SAVE
 ## TODO:2003 The use of "jansson" here is not mandatory. You don't have
 ## TODO:2003 to keep it.
 
-PKG_CHECK_MODULES([JANSSON], [jansson >= 2.1])
+##PKG_CHECK_MODULES([JANSSON], [jansson >= 2.1])
 
 AC_CACHE_SAVE
 

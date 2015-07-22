@@ -8,7 +8,7 @@
 },
 {
 	"name": "Test",
-	"cmd": ["make test"],
+	"cmd": ["make check"],
 	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 },
 {
