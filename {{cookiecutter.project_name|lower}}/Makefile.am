@@ -47,7 +47,7 @@ pkginclude_HEADERS = \
 lib_LTLIBRARIES = \
   src/libsample.la
 
-src_autotools_unittest_libsample_la_SOURCES = \
+src_libsample_la_SOURCES = \
   src/sample.h \
   src/sample.c
 
