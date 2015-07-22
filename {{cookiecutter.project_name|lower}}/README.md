@@ -8,6 +8,7 @@ Installation
 
 Execute the following commands:
 
+    $ ACLOCAL_FLAGS="-I /usr/share/aclocal" ./autogen.sh
     $ ./configure
     $ make
     $ sudo make install
