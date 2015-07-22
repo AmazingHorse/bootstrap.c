@@ -82,9 +82,7 @@ esac
 
 AC_CACHE_SAVE
 
-## TODO:2003 Add the dependencies of your project here.
-## TODO:2003 The use of "jansson" here is not mandatory. You don't have
-## TODO:2003 to keep it.
+## TODO:2003 Add the dependencies of your project here. An example is commented.
 
 ##PKG_CHECK_MODULES([JANSSON], [jansson >= 2.1])
 

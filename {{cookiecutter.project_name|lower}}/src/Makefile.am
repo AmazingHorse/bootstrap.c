@@ -6,9 +6,9 @@ dist_man_MANS = {{cookiecutter.project_name|lower}}.8
 ## TODO:5000 ./autogen.sh after modifying this file.
 
 {{cookiecutter.project_name|lower|replace("-","_")}}_SOURCES  = log.c log.h sample.h sample.c {{cookiecutter.project_name|lower}}.h {{cookiecutter.project_name|lower}}.c
-{{cookiecutter.project_name|lower|replace("-","_")}}_CFLAGS   = $(AM_CFLAGS) @JANSSON_CFLAGS@
-{{cookiecutter.project_name|lower|replace("-","_")}}_LDFLAGS  = $(AM_LDFLAGS) @JANSSON_LIBS@
+{{cookiecutter.project_name|lower|replace("-","_")}}_CFLAGS   = $(AM_CFLAGS) #@JANSSON_CFLAGS@
+{{cookiecutter.project_name|lower|replace("-","_")}}_LDFLAGS  = $(AM_LDFLAGS) #@JANSSON_LIBS@
 
 ## TODO:2004 Each time you have used `PKG_CHECK_MODULES` macro
 ## TODO:2004 in `configure.ac`, you get two variables that
-## TODO:2004 you can substitute like above.
+## TODO:2004 you can substitute like commented out above.
