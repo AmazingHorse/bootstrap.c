@@ -6,7 +6,7 @@ SUBDIRS        = src
 
 # Declare cflags and ldflags
 AM_CFLAGS = $(MORE_CFLAGS)
-AM_CPPFLAGS = $(MORE_CPPFLAGS)
+AM_CPPFLAGS = $(MORE_CPPFLAGS) -I$(top_srcdir)/src
 AM_LDFLAGS = $(MORE_LDFLAGS)
 
 # Nonstandard package files for distribution
