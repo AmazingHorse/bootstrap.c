@@ -64,7 +64,7 @@ check_PROGRAMS=
 # Define unit tests with gtest
 UNIT_TESTS += test/sample_test
 check_PROGRAMS += test/sample_test
-test_sample_test_SOURCES = test/sample_test.c
+test_sample_test_SOURCES = test/sample_test.cpp
 test_sample_test_CPPFLAGS = -I$(top_srcdir)/src $(GTEST_CPPFLAGS)
 test_sample_test_CXXFLAGS = $(GTEST_CXXFLAGS)
 test_sample_test_LDFLAGS = $(GTEST_LDFLAGS)
