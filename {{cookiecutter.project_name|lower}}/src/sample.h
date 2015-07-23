@@ -1,5 +1,5 @@
-#ifndef SRC_AUTOTOOLS_UNITTEST_SAMPLE_H_
-#define SRC_AUTOTOOLS_UNITTEST_SAMPLE_H_
+#ifndef SRC_SAMPLE_H_
+#define SRC_SAMPLE_H_
 
 /**
  * @brief Calculate the square of given number.
@@ -24,4 +24,4 @@ inline int factorial(int n) {
   return n * factorial(n-1);
 }
 
-#endif  // SRC_AUTOTOOLS_UNITTEST_SAMPLE_H_
+#endif  // SRC_SAMPLE_H_
