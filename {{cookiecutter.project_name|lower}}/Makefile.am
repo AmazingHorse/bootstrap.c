@@ -2,7 +2,7 @@
 ACLOCAL_AMFLAGS = -I m4
 
 # Subdirectories to look for additional makefiles
-SUBDIRS        = src test
+SUBDIRS        = src
 
 # Declare cflags and ldflags
 AM_CFLAGS = $(MORE_CFLAGS)
